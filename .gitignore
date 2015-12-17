@@ -1,3 +1,7 @@
 node_modules
 .DS_Store*
 .hubot_history
+
+# I leave a script with environment variables and the launch command in my repo for testing.
+start_hubot.sh
+
