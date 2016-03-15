@@ -11,7 +11,7 @@
 #   github.com/threesided
 
 module.exports = (robot) ->
-  robot.hear /\:eyes\:\stsf\-(frontend|api|dotcom|search|dashboard|hubot)\s?\#?([1-9\s]{1,})\s?/i, (msg) ->
+  robot.hear /\:eyes\:\stsf\-(frontend|api|dotcom|search|dashboard|hubot)\s?\#?([\d\s]{1,})\s?/i, (msg) ->
     sendMessage = (repo, prId) ->
       "https://github.com/thestorefront/tsf-#{ repo }/pull/#{ prId }"
 
